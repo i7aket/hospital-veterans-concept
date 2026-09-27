@@ -1,0 +1,27 @@
+[
+ {
+  "name": "Красьоха Володимир Володимирович",
+  "role": "генеральний директор",
+  "photo": "https://hospital-veterans.lviv.ua/wp-content/uploads/2024/11/krasioha-1.jpg"
+ },
+ {
+  "name": "Коцань Ростислав Михайлович",
+  "role": "медичний директор",
+  "photo": "https://hospital-veterans.lviv.ua/wp-content/uploads/2024/02/kocanj.jpg"
+ },
+ {
+  "name": "Савʼюк Андрій Петрович",
+  "role": "заступник медичного директора з хірургічної допомоги",
+  "photo": "https://hospital-veterans.lviv.ua/wp-content/uploads/2024/04/savjuk.jpg"
+ },
+ {
+  "name": "Рогуля Алла Володимирівна",
+  "role": "заступник медичного директора з реабілітації",
+  "photo": "https://hospital-veterans.lviv.ua/wp-content/uploads/2024/04/rogulia.jpg"
+ },
+ {
+  "name": "Середич Роман Асафатович",
+  "role": "заступник медичного директора з експертизи тимчасової непрацездатності",
+  "photo": "https://hospital-veterans.lviv.ua/wp-content/uploads/2024/04/seredych.jpg"
+ }
+]

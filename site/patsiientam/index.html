@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Пацієнтам: запис, ПМГ, ціни — Госпіталь ветеранів ім. Юрія Липи</title>
+<meta name="description" content="Як записатися на прийом, обстеження за програмою медичних гарантій, скринінг 40+ та ціни на платні послуги госпіталю.">
+<link rel="icon" href="https://hospital-veterans.lviv.ua/wp-content/uploads/2024/04/favicon-32x32-1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.ways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.way{display:flex;flex-direction:column;padding:28px;border-radius:var(--r);background:#fff;border:1px solid var(--line)}
+.way .num{font:700 15px var(--head);color:var(--primary);margin-bottom:14px}
+.way h3{font-size:22px}
+.way p{color:var(--muted);margin-top:8px}
+.way .act{margin-top:auto;padding-top:22px}
+.way--main{background:var(--primary-2);border-color:var(--primary-2);color:#fff}
+.way--main h3{color:#fff}.way--main p{color:rgb(255 255 255/.8)}.way--main .num{color:#9fe6f5}
+@media (max-width:900px){.ways{grid-template-columns:1fr}}
+.pmg{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.pmg .card{padding:22px}
+.pmg h3{font-size:20px;margin-bottom:12px;display:flex;gap:10px;align-items:center}
+.pmg .tels{display:grid;gap:6px}
+.pmg .tels a{font:700 19px var(--head);text-decoration:none;white-space:nowrap}
+.hours{display:inline-flex;gap:10px;align-items:center;padding:10px 16px;border-radius:12px;background:#fff;border:1px solid var(--line);font-weight:600}
+.screen{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:0;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.screen .ph{background:#0f5a3f;min-height:260px;position:relative}
+.screen .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.screen .bd{padding:clamp(24px,3.5vw,44px)}
+@media (max-width:860px){.screen{grid-template-columns:1fr}}
+.pricebox{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(18px,3vw,32px)}
+.seg{display:inline-flex;padding:4px;border-radius:14px;background:var(--soft);gap:4px;margin-bottom:18px;max-width:100%}
+@media (max-width:560px){.seg{display:flex}.seg button{flex:1;padding:0 10px;font-size:16px}}
+.seg button{min-height:46px;padding:0 20px;border-radius:11px;border:0;background:none;font:600 17px var(--body);color:var(--primary);cursor:pointer}
+.seg button[aria-pressed="true"]{background:#fff;box-shadow:0 1px 3px rgb(10 50 70/.15)}
+.cat{margin-top:28px}
+.cat h3{font-size:22px;display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px}
+.cat h3 a{font:600 16px var(--body);text-decoration:none;white-space:nowrap}
+.rows{margin-top:10px;border-top:1px solid var(--line)}
+.row{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--line);font-size:17px;overflow-wrap:anywhere}
+.row b{flex:none;font-variant-numeric:tabular-nums;white-space:nowrap}
+.row.sub{font-weight:700;color:var(--primary);border-bottom:0;padding-top:20px}
+.row mark{background:#fff1a8;border-radius:3px;padding:0 1px}
+.showall{margin-top:16px}
+@media (max-width:640px){#pcats{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;margin-inline:-4px;scrollbar-width:thin}#pcats .chip{flex:none}}
+</style>
+</head>
+<body>
+<script src="../assets/site.js"></script>
+<main id="main">
+
+<section class="phero"><div class="wrap">
+  <div>
+    <p class="crumbs"><a href="../">Головна</a> / Пацієнтам</p>
+    <h1>Запис, обстеження та ціни</h1>
+    <p class="lead">Усе, що потрібно перед візитом: як записатися, які обстеження доступні за програмою медичних гарантій і скільки коштують платні послуги.</p>
+    <nav class="jump" aria-label="Розділи сторінки">
+      <a class="btn btn-line btn-sm" href="#zapys">Запис на прийом</a>
+      <a class="btn btn-line btn-sm" href="#pmg">Обстеження за ПМГ</a>
+      <a class="btn btn-line btn-sm" href="#skryning">Скринінг 40+</a>
+      <a class="btn btn-line btn-sm" href="#ciny">Ціни</a>
+    </nav>
+  </div>
+  <div class="pic"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2024/03/poliklinika2.jpg" alt="Реєстратура консультативної поліклініки"></div>
+</div></section>
+
+<section class="section" id="zapys"><div class="wrap">
+  <div class="head"><div><span class="kicker">Запис на прийом</span><h2>Три способи записатися</h2></div></div>
+  <div class="ways">
+    <div class="way way--main">
+      <span class="num">1 · Онлайн</span>
+      <h3>Онлайн-запис на прийом</h3>
+      <p>Оберіть лікаря та зручний час на порталі запису госпіталю.</p>
+      <div class="act"><a class="btn btn-light" id="online" target="_blank" rel="noopener">Записатися онлайн <svg class="i"><use href="#i-external"/></svg></a></div>
+    </div>
+    <div class="way">
+      <span class="num">2 · За телефоном</span>
+      <h3>Реєстратура консультативної поліклініки</h3>
+      <p>Консультації лікарів-спеціалістів, діагностика та планування лікування.</p>
+      <div class="act phones" id="clinic"></div>
+    </div>
+  </div>
+  <div class="callout callout--urgent" style="margin-top:20px">
+    <div><h3>Потрібна невідкладна допомога?</h3><p>Запис не потрібен: приймальне відділення працює цілодобово. При загрозі життю — 103.</p></div>
+    <div class="phones" id="urgent" style="min-width:min(100%,340px)"></div>
+  </div>
+</div></section>
+
+<section class="section section--white" id="pmg"><div class="wrap">
+  <div class="head">
+    <div><span class="kicker">Програма медичних гарантій</span><h2>Обстеження за ПМГ</h2><p>Запис на обстеження за програмою медичних гарантій — за телефонами нижче.</p></div>
+    <span class="hours"><svg class="i"><use href="#i-clock"/></svg>Пн–Пт, 9:00–17:00</span>
+  </div>
+  <div class="pmg" id="pmg-list"></div>
+</div></section>
+
+<section class="section" id="skryning"><div class="wrap">
+  <div class="screen">
+    <div class="ph"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2026/02/01kckfbp0568swj19a6qg3hppz.jpg" alt="Скринінг здоров’я 40+" loading="lazy"></div>
+    <div class="bd">
+      <span class="kicker">Скринінг здоров’я 40+</span>
+      <h2 style="font-size:clamp(26px,3vw,36px);margin-bottom:14px">Госпіталь долучився до програми скринінгу</h2>
+      <p class="muted" id="screen-text"></p>
+      <div class="btns" style="margin-top:22px">
+        <a class="btn btn-primary" href="../novyny/?s=gospital-doluchyvsya-do-realizacziyi-programy-skryning-zdorovya-40">Детальніше про скринінг <svg class="i"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section class="section section--white" id="ciny"><div class="wrap">
+  <div class="head"><div><span class="kicker">Платні послуги</span><h2>Ціни на послуги</h2><p>Діагностика, лабораторія, консультації, ендоскопія, фізична терапія, медогляди. Ціни — з офіційного сайту госпіталю.</p></div></div>
+  <div class="pricebox">
+    <div class="seg" role="group" aria-label="Заклад">
+      <button type="button" data-w="hospital" aria-pressed="true">Госпіталь (Винники)</button>
+      <button type="button" data-w="cardio" aria-pressed="false">Кардіоцентр</button>
+    </div>
+    <label class="search"><span class="sr">Пошук послуги</span><svg class="i"><use href="#i-search"/></svg><input id="pq" type="search" placeholder="Наприклад: МРТ, аналіз крові, консультація кардіолога" autocomplete="off"></label>
+    <div class="chips" id="pcats" style="margin-top:16px" role="group" aria-label="Категорія"></div>
+    <p class="muted" id="pcount" role="status" style="margin-top:14px;font-size:16px"></p>
+    <div id="plist"></div>
+  </div>
+  <p class="muted" style="margin-top:16px;font-size:16px">Послуги надаються згідно з <a href="https://hospital-veterans.lviv.ua/publichna-oferta/" target="_blank" rel="noopener">договором публічної оферти</a>. Актуальність ціни уточнюйте за телефоном категорії.</p>
+</div></section>
+
+</main>
+<script>
+const {esc, icon, data, telText, C, phoneList} = H;
+document.getElementById('online').href = C.online;
+document.getElementById('clinic').innerHTML = phoneList(['clinic']);
+document.getElementById('urgent').innerHTML = phoneList(['urgent']);
+
+// source: /zapys-na-poslugy-za-programoyu-pmg/
+const PMG = [
+  ['scan', 'Рентген-обстеження', ['+380954051611', '+380322590267']],
+  ['scan', 'УЗД-обстеження', ['+380954051611', '+380322590267']],
+  ['steth', 'Ендоскопія', ['+380954051611', '+380994252592']],
+  ['scan', 'МРТ-обстеження', ['+380322593068', '+380977382690']],
+  ['heart', 'Гістероскопія 50+', ['+380954051611']],
+];
+document.getElementById('pmg-list').innerHTML = PMG.map(([ic, name, tels]) => `<div class="card"><h3>${icon(ic)}${name}</h3>
+  <div class="tels">${tels.map(t => `<a href="tel:${t}">${telText(t)}</a>`).join('')}</div></div>`).join('');
+
+data('news').then(N => {
+  const n = N.find(x => x.slug.includes('skryning'));
+  if (n) document.getElementById('screen-text').textContent = n.excerpt.slice(0, 320) + (n.excerpt.length > 320 ? '…' : '');
+});
+
+data('prices').then(P => {
+  let who = H.param('who') === 'cardio' ? 'cardio' : 'hospital', cat = P[who][0].title;   // one category at a time; a search looks through all of them
+  let full = false;   // long categories show the first 15 rows until asked
+  document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x.dataset.w === who));
+  const q = document.getElementById('pq'), cats = document.getElementById('pcats'), out = document.getElementById('plist');
+  const drawCats = () => H.keepFocus(cats, 'data-c', () => cats.innerHTML = [['', 'Усі'], ...P[who].map(t => [t.title, t.title])]
+    .map(([v, l]) => `<button class="chip" type="button" data-c="${esc(v)}" aria-pressed="${v === cat}">${esc(l)}</button>`).join(''));
+  const mark = (s, words) => words.reduce((h, w) => h.replace(new RegExp(`(${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), '<mark>$1</mark>'), esc(s));
+  function draw() {
+    const words = q.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    let total = 0;
+    out.innerHTML = P[who].filter(t => !cat || t.title === cat).map(t => {
+      const rows = t.rows.filter(r => r.length === 1 ? !words.length : words.every(w => r[0].toLowerCase().includes(w)));
+      const n = rows.filter(r => r.length > 1).length; total += n;
+      if (!n) return '';
+      const cut = !full && !words.length && rows.length > 15;
+      return `<div class="cat"><h3>${esc(t.title)}${t.phone ? `<a href="tel:${t.phone}">${icon('phone')} Запис: ${telText(t.phone)}</a>` : ''}</h3>
+        <div class="rows">${(cut ? rows.slice(0, 15) : rows).map(r => r.length === 1 ? `<div class="row sub">${esc(r[0])}</div>` : `<div class="row"><span>${mark(r[0], words)}</span><b>${esc(r[1])} грн</b></div>`).join('')}</div>${cut ? `<button class="btn btn-line btn-sm showall" type="button" data-all>Показати всі ${n} ${H.plural(n, 'послугу', 'послуги', 'послуг')}</button>` : ''}</div>`;
+    }).join('') || `<p class="muted" style="margin-top:24px">Нічого не знайдено. Спробуйте інше слово або зателефонуйте: <a href="tel:${C.clinic.tel}">${telText(C.clinic.tel)}</a></p>`;
+    document.getElementById('pcount').textContent = words.length ? `Знайдено послуг: ${total}` : '';
+  }
+  document.querySelector('.seg').addEventListener('click', e => {
+    const b = e.target.closest('[data-w]'); if (!b) return;
+    who = b.dataset.w; full = false; cat = q.value.trim() ? '' : P[who][0].title;
+    document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b));
+    drawCats(); draw();
+  });
+  cats.addEventListener('click', e => { const b = e.target.closest('[data-c]'); if (b) { cat = b.dataset.c; full = false; drawCats(); draw(); } });
+  out.addEventListener('click', e => { if (e.target.closest('[data-all]')) { full = true; draw(); } });
+  q.addEventListener('input', () => { if (q.value.trim() && cat) { cat = ''; drawCats(); } draw(); });
+  q.value = H.param('q') || '';
+  if (q.value) cat = '';   // /patsiientam/?q=мрт#ciny from the department search
+  drawCats(); draw();
+});
+</script>
+</body>
+</html>
