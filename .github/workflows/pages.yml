@@ -1,0 +1,58 @@
+name: Pages
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scripts parse, data is valid JSON, no root-absolute links
+        run: |
+          node --check site/assets/site.js
+          for f in site/data/*.json; do python3 -m json.tool "$f" > /dev/null; done
+          python3 - <<'PY'
+          import glob, re, subprocess, sys, tempfile
+          bad = 0
+          for f in glob.glob('site/**/index.html', recursive=True):
+              s = open(f).read()
+              for js in re.findall(r'<script>(.*?)</script>', s, flags=re.S):
+                  with tempfile.NamedTemporaryFile('w', suffix='.js', delete=False) as t:
+                      t.write(js)
+                  r = subprocess.run(['node', '--check', t.name], capture_output=True, text=True)
+                  if r.returncode:
+                      print(f, r.stderr); bad += 1
+              # the site is served from /<repo>/ on Pages, so internal links must be relative
+              for m in re.findall(r'(?:href|src)="/(?!/)[^"]*"', s):
+                  print(f, 'root-absolute link:', m); bad += 1
+          sys.exit(bad)
+          PY
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: check
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4

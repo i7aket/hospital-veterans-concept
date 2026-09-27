@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Контакти та як дістатися — Госпіталь ветеранів ім. Юрія Липи</title>
+<meta name="description" content="Телефони госпіталю за призначенням, адреси у Винниках і Львові, громадський транспорт.">
+<link rel="icon" href="https://hospital-veterans.lviv.ua/wp-content/uploads/2024/04/favicon-32x32-1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+.pgroups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:1000px){.pgroups{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.pgroups{grid-template-columns:1fr}}
+.pgroups h3{font-size:20px;margin-bottom:14px}
+.tline{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+.tline:first-of-type{border-top:0}
+.tline span{color:var(--muted);font-size:16px}
+.tline a{font:700 18px var(--head);text-decoration:none;white-space:nowrap}
+.place{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:0;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.place+.place{margin-top:24px}
+.place .bd{padding:clamp(24px,3.5vw,40px)}
+.place h3{font-size:clamp(24px,2.6vw,30px);margin:12px 0 8px}
+.place .map{position:relative;min-height:360px;background:var(--soft)}
+.place iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.place .map-ph{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:8px;color:var(--muted);text-align:center;padding:20px;text-decoration:none}
+.place .map-ph span{font-weight:700;color:var(--primary)}
+.bus{list-style:none;margin:18px 0 24px;padding:0;display:grid;gap:12px}
+.bus li{display:flex;gap:14px;align-items:flex-start}
+.bus b{flex:none;min-width:58px;height:34px;display:inline-grid;place-items:center;border-radius:9px;background:var(--primary);color:#fff;font-family:var(--head)}
+@media (max-width:860px){.place{grid-template-columns:1fr}.place .map{min-height:280px}}
+</style>
+</head>
+<body>
+<script src="../assets/site.js"></script>
+<main id="main">
+
+<section class="phero phero--text"><div class="wrap">
+  <p class="crumbs"><a href="../">Головна</a> / Контакти</p>
+  <h1>Контакти та як дістатися</h1>
+  <p class="lead">Кожен номер підписаний: телефонуйте туди, де саме вам допоможуть.</p>
+  <div class="phones" style="margin-top:28px;max-width:560px" id="top-phones"></div>
+  <p class="muted" style="margin-top:12px">При загрозі життю телефонуйте 103.</p>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="head"><div><span class="kicker">Телефони</span><h2>За призначенням</h2></div></div>
+  <div class="pgroups" id="pgroups"></div>
+</div></section>
+
+<section class="section section--white" id="yak-diistatysia"><div class="wrap">
+  <div class="head"><div><span class="kicker">Як дістатися</span><h2>Адреси</h2></div></div>
+
+  <div class="place">
+    <div class="bd">
+      <span class="tag">Основний госпітальний комплекс</span>
+      <h3>вул. Івасюка, 31, м. Винники</h3>
+      <p class="muted">Львівська міська громада</p>
+      <ul class="bus">
+        <li><b>5А</b><span>Львів, залізнична ст. «Підзамче» (вул. Хмельницького) — Винники (вул. Галицька)</span></li>
+        <li><b>29</b><span>Львів, центральний залізничний вокзал — Винники, вул. Івасюка</span></li>
+        <li><b>40А</b><span>Львів, вул. Стрийська (ТРЦ King Cross Leopolis — головний автовокзал) — Винники, вул. Івасюка</span></li>
+      </ul>
+      <a class="btn btn-primary btn-sm" id="map1" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>Прокласти маршрут</a>
+    </div>
+    <div class="map"><a class="map-ph" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%B2%D1%83%D0%BB.%20%D0%86%D0%B2%D0%B0%D1%81%D1%8E%D0%BA%D0%B0%2031%2C%20%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg><b>вул. Івасюка, 31, Винники</b><span>Відкрити карту</span></a>
+      <iframe title="Госпіталь на карті" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%D0%B2%D1%83%D0%BB.%20%D0%86%D0%B2%D0%B0%D1%81%D1%8E%D0%BA%D0%B0%2031%2C%20%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8&amp;z=15&amp;output=embed"></iframe></div>
+  </div>
+
+  <div class="place">
+    <div class="bd">
+      <span class="tag">Кардіологічний центр</span>
+      <h3>вул. Кульпарківська, 35, м. Львів</h3>
+      <div class="phones" style="margin:18px 0 24px" id="cardio"></div>
+      <a class="btn btn-primary btn-sm" id="map2" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>Прокласти маршрут</a>
+    </div>
+    <div class="map"><a class="map-ph" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%B2%D1%83%D0%BB.%20%D0%9A%D1%83%D0%BB%D1%8C%D0%BF%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%2035%2C%20%D0%9B%D1%8C%D0%B2%D1%96%D0%B2" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg><b>вул. Кульпарківська, 35, Львів</b><span>Відкрити карту</span></a>
+      <iframe title="Кардіоцентр на карті" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%D0%B2%D1%83%D0%BB.%20%D0%9A%D1%83%D0%BB%D1%8C%D0%BF%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%2035%2C%20%D0%9B%D1%8C%D0%B2%D1%96%D0%B2&amp;z=15&amp;output=embed"></iframe></div>
+  </div>
+
+  <div class="callout" style="margin-top:24px">
+    <div><h3>Реабілітаційне відділення смт Дубляни</h3><p>Окремий підрозділ госпіталю. Телефон відділення:</p></div>
+    <div class="btns"><a class="btn btn-line" href="tel:+380960248941"><svg class="i"><use href="#i-phone"/></svg>096 024 89 41</a><a class="btn btn-line" href="../viddilennia/?s=reabilitaczijne-viddilennya-smt-dublyany">Про відділення</a></div>
+  </div>
+</div></section>
+
+<section class="section section--tight"><div class="wrap">
+  <div class="grid g2">
+    <a class="card" id="mail"><div class="ico"><svg class="i"><use href="#i-mail"/></svg></div><h3>Електронна пошта</h3><p id="mail-t"></p></a>
+    <div class="card"><div class="ico"><svg class="i"><use href="#i-globe"/></svg></div><h3>Ми в соцмережах</h3><p><a id="fb" target="_blank" rel="noopener">Facebook</a> · <a id="ig" target="_blank" rel="noopener">Instagram</a></p></div>
+  </div>
+</div></section>
+
+</main>
+<script>
+const {C, telText, phoneList} = H;
+document.getElementById('top-phones').innerHTML = phoneList(['urgent', 'clinic']);
+document.getElementById('cardio').innerHTML = phoneList(['cardioEr', 'cardioReg']);
+document.getElementById('map1').href = C.map;
+document.getElementById('map2').href = C.cardioMap;
+const mail = document.getElementById('mail'); mail.href = 'mailto:' + C.email; document.getElementById('mail-t').textContent = C.email;
+document.getElementById('fb').href = C.facebook; document.getElementById('ig').href = C.instagram;
+
+// sources: /kontakty/, /zapys-na-poslugy-za-programoyu-pmg/, /platni-poslugy/
+const GROUPS = [
+  ['Госпіталь (Винники)', [['Невідкладна допомога, цілодобово', '+380322961140'], ['Реєстратура консультативної поліклініки', '+380322590267'], ['Приймальня генерального директора', '+380322961145']]],
+  ['Запис на обстеження (ПМГ)', [['Рентген, УЗД, ендоскопія, гістероскопія', '+380954051611'], ['Рентген, УЗД', '+380322590267'], ['Ендоскопія', '+380994252592'], ['МРТ', '+380322593068'], ['МРТ', '+380977382690']]],
+  ['Платні послуги — запис', [['Діагностичні послуги', '+380322961179'], ['Лабораторія', '+380677921047'], ['Консультації, медогляди, фізична терапія', '+380322590267'], ['Ендоскопії', '+380637523193']]],
+  ['Кардіологічний центр (Львів)', [['Приймальне відділення', '+380322383092'], ['Приймальне відділення', '+380322581028'], ['Реєстратура', '+380322581032']]],
+];
+document.getElementById('pgroups').innerHTML = GROUPS.map(([h, rows]) => `<div class="card"><h3>${h}</h3>${rows.map(([l, t]) => `<div class="tline"><span>${l}</span><a href="tel:${t}">${telText(t)}</a></div>`).join('')}</div>`).join('')
+  + `<div class="card"><h3>Відділення</h3><p class="muted" style="margin:0 0 16px">Телефони всіх 33 відділень — на їхніх сторінках.</p><a class="btn btn-line btn-sm" href="../viddilennia/">Знайти відділення</a></div>`;
+</script>
+</body>
+</html>

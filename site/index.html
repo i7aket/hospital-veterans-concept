@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Госпіталь ветеранів ім. Юрія Липи — Винники, Львів</title>
+<meta name="description" content="Львівський обласний госпіталь ветеранів війн та репресованих імені Юрія Липи: невідкладна допомога цілодобово, понад 30 напрямів лікування, реабілітація захисників, кардіоцентр.">
+<link rel="icon" href="https://hospital-veterans.lviv.ua/wp-content/uploads/2024/04/favicon-32x32-1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.hero{background:var(--surface);border-bottom:1px solid var(--line)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,4vw,64px);align-items:center;padding-block:clamp(36px,5vw,72px)}
+.hero .eyebrow{font-size:16px;color:var(--muted);max-width:34rem}
+.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.04;margin:14px 0 20px}
+.hero h1 em{font-style:normal;color:var(--primary)}
+.hero .lead{font-size:clamp(19px,1.7vw,22px);color:var(--muted);max-width:36rem}
+.hero .btns{margin-top:30px}
+.mosaic{display:grid;grid-template-columns:1.1fr 1fr;grid-template-rows:1fr 1fr;gap:12px;aspect-ratio:1.05}
+.mosaic figure{margin:0;position:relative;border-radius:20px;overflow:hidden;background:var(--soft)}
+.mosaic figure:first-child{grid-row:span 2}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic figcaption{position:absolute;left:12px;bottom:12px;padding:6px 12px;border-radius:999px;background:rgb(255 255 255/.92);font-size:14px;font-weight:600;color:var(--ink)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.mosaic{aspect-ratio:1.6}}
+@media (max-width:560px){.mosaic{aspect-ratio:1.5;gap:8px}.mosaic figcaption{font-size:12px;left:8px;bottom:8px}}
+
+.quick{margin-top:-1px}
+.quick .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.quick .grid{grid-template-columns:1fr}}
+.urgent-note{margin-top:14px;font-size:16px;color:var(--muted);display:flex;gap:8px;align-items:center}
+
+.need{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.need a{display:flex;align-items:center;gap:16px;padding:20px 22px;border-radius:16px;background:#fff;border:1px solid var(--line);text-decoration:none;color:var(--ink);font:600 19px/1.3 var(--head);min-height:84px;transition:border-color .2s,box-shadow .2s}
+.need a small{display:block;font:400 16px/1.35 var(--body);color:var(--muted);margin-top:3px}
+.need a>.i:last-child{margin-left:auto;color:var(--muted);transition:transform .2s}
+@media (hover:hover){.need a:hover{border-color:var(--primary);box-shadow:var(--shadow)}.need a:hover>.i:last-child{transform:translateX(4px);color:var(--primary)}}
+@media (max-width:1000px){.need{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.need{grid-template-columns:1fr}.need a{min-height:72px;padding:16px 18px}}
+
+.dir .pcard ul{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:4px;font-size:16px;color:var(--muted)}
+.dir .pcard li::before{content:"—";margin-right:8px;color:var(--brand)}
+.dir .pcard .cnt{margin-top:auto;padding-top:12px;font-weight:700;color:var(--primary);display:flex;align-items:center;gap:6px}
+@media (max-width:640px){.dir .grid{gap:12px}.dir .pcard{display:grid;grid-template-columns:96px 1fr}.dir .pcard .ph{aspect-ratio:auto;height:100%;min-height:110px}.dir .pcard .bd{padding:14px 16px}.dir .pcard ul{display:none}.dir .pcard h3{font-size:18px}.dir .pcard .cnt{padding-top:4px}}
+
+.vet{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:center}
+.vet .pic{border-radius:22px;overflow:hidden;aspect-ratio:4/3}
+.vet .pic img{width:100%;height:100%;object-fit:cover}
+.vet h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:18px}
+.ticks{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:14px}
+.ticks li{display:flex;gap:14px;align-items:flex-start;font-size:18px}
+.ticks li .i{color:var(--primary);background:#fff;border-radius:50%;padding:4px;width:30px;height:30px;flex:none;margin-top:-2px}
+@media (max-width:900px){.vet{grid-template-columns:1fr}}
+
+.cardio{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);border-radius:26px;overflow:hidden;background:var(--primary-2);color:#fff}
+.cardio .txt{padding:clamp(28px,4vw,56px)}
+.cardio h2{color:#fff;font-size:clamp(28px,3.2vw,40px);margin-bottom:16px}
+.cardio p{color:rgb(255 255 255/.82)}
+.cardio .facts-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0}
+.cardio .facts-row b{display:block;font:700 30px/1 var(--head);color:#9fe6f5}
+.cardio .facts-row span{display:block;margin-top:6px;font-size:16px;color:rgb(255 255 255/.75)}
+.cardio .pic{min-height:320px;position:relative}
+.cardio .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media (max-width:900px){.cardio{grid-template-columns:1fr}.cardio .pic{order:-1;min-height:240px}}
+
+.proj{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.proj a{position:relative;display:block;border-radius:18px;overflow:hidden;aspect-ratio:4/3;background:var(--soft);color:#fff;text-decoration:none}
+.proj img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.proj a::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgb(7 30 40/.82),rgb(7 30 40/0) 60%)}
+.proj span{position:absolute;left:18px;right:18px;bottom:16px;z-index:1;font:600 18px/1.3 var(--head)}
+@media (hover:hover){.proj a:hover img{transform:scale(1.05)}}
+@media (max-width:900px){.proj{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.proj{grid-template-columns:1fr}}
+
+.eu{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.eu .logo{background:#fff;border-radius:16px;padding:18px;border:1px solid var(--line)}
+@media (max-width:900px){.eu{grid-template-columns:1fr}}
+
+.loc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.loc .card h3{font-size:22px;margin-bottom:6px}
+.loc .bus{list-style:none;margin:16px 0 20px;padding:0;display:grid;gap:10px;font-size:17px}
+.loc .bus li{display:flex;gap:12px}
+.loc .bus b{flex:none;min-width:56px;height:30px;display:inline-grid;place-items:center;border-radius:8px;background:var(--soft);color:var(--primary)}
+@media (max-width:800px){.loc{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<script src="assets/site.js"></script>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Львівський обласний госпіталь ветеранів війн та репресованих імені Юрія Липи</p>
+      <h1>Лікування та реабілітація <em>за понад 30 напрямами</em></h1>
+      <p class="lead">Багатопрофільний госпіталь у Винниках і кардіоцентр у Львові. Невідкладна допомога цілодобово, всебічна підтримка та реабілітація поранених військових.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="patsiientam/#zapys"><svg class="i"><use href="#i-cal"/></svg>Записатися на прийом</a>
+        <a class="btn btn-line" href="viddilennia/"><svg class="i"><use href="#i-search"/></svg>Знайти відділення</a>
+      </div>
+    </div>
+    <div class="mosaic">
+      <figure><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2026/09/news_170926_1.jpg" alt="Медсестра тримає пацієнта за руку" fetchpriority="high"><figcaption>Турбота про пацієнта</figcaption></figure>
+      <figure><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2026/09/img_5673-1.jpeg" alt="Оновлена операційна госпіталю"><figcaption>Оновлені операційні</figcaption></figure>
+      <figure><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2024/03/portfolio_reabilitaciya2.jpg" alt="Фізичний терапевт допомагає пацієнту з протезом"><figcaption>Реабілітація</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section--tight section--white quick">
+  <div class="wrap">
+    <div class="grid" id="quick-phones"></div>
+    <p class="urgent-note"><svg class="i"><use href="#i-siren"/></svg>При загрозі життю телефонуйте 103.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head"><div><span class="kicker">З чого почати</span><h2>Мені потрібно…</h2></div></div>
+    <nav class="need" aria-label="Швидкі маршрути">
+      <a href="patsiientam/#zapys"><span class="ico"><svg class="i"><use href="#i-steth"/></svg></span><span>Записатися до лікаря<small>Онлайн або за телефоном</small></span><svg class="i"><use href="#i-arrow"/></svg></a>
+      <a href="patsiientam/#pmg"><span class="ico"><svg class="i"><use href="#i-scan"/></svg></span><span>Обстеження за ПМГ<small>Рентген, УЗД, ендоскопія, МРТ</small></span><svg class="i"><use href="#i-arrow"/></svg></a>
+      <a href="novyny/?s=gospital-doluchyvsya-do-realizacziyi-programy-skryning-zdorovya-40"><span class="ico"><svg class="i"><use href="#i-check"/></svg></span><span>Скринінг здоров’я 40+<small>Державна програма, до якої долучився госпіталь</small></span><svg class="i"><use href="#i-arrow"/></svg></a>
+      <a href="viddilennia/?g=Реабілітація"><span class="ico"><svg class="i"><use href="#i-walk"/></svg></span><span>Пройти реабілітацію<small>Фізична, нейро- та психологічна</small></span><svg class="i"><use href="#i-arrow"/></svg></a>
+      <a href="veteranam/"><span class="ico"><svg class="i"><use href="#i-shield"/></svg></span><span>Допомога ветеранам і родинам<small>Лікування, реабілітація, документи</small></span><svg class="i"><use href="#i-arrow"/></svg></a>
+      <a href="patsiientam/#ciny"><span class="ico"><svg class="i"><use href="#i-coins"/></svg></span><span>Платні послуги та ціни<small>Понад 350 позицій з пошуком</small></span><svg class="i"><use href="#i-arrow"/></svg></a>
+    </nav>
+  </div>
+</section>
+
+<section class="section section--white dir">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="kicker">Напрями допомоги</span><h2>33 відділення та служби</h2></div>
+      <a class="more" href="viddilennia/">Усі відділення <svg class="i"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="grid g3" id="groups"></div>
+  </div>
+</section>
+
+<section class="section section--warm">
+  <div class="wrap vet">
+    <div class="pic"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2026/09/news_220926-1.jpg" alt="Захисники на реабілітаційному майданчику госпіталю" loading="lazy"></div>
+    <div>
+      <span class="kicker">Ветеранам і родинам</span>
+      <h2>Ми цінуємо здоров’я кожного захисника</h2>
+      <p class="muted" style="font-size:19px">Госпіталь забезпечує всебічну підтримку та реабілітацію поранених військових.</p>
+      <ul class="ticks">
+        <li><svg class="i"><use href="#i-check"/></svg>Сучасний реабілітаційний центр: фізична та психологічна реабілітація, зали кінезіотерапії та ерготерапії.</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Безкоштовні пластичні та щелепно-лицеві операції після мінно-вибухових поранень — за участі провідних українських і закордонних хірургів.</li>
+        <li><svg class="i"><use href="#i-check"/></svg>Допомога постраждалим унаслідок воєнних дій, зокрема внутрішньо переміщеним особам.</li>
+      </ul>
+      <div class="btns" style="margin-top:28px"><a class="btn btn-primary" href="veteranam/">Детальніше для ветеранів <svg class="i"><use href="#i-arrow"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head"><div><span class="kicker">Результати попереднього року</span><h2>Госпіталь у цифрах</h2><p>За даними госпіталю.</p></div></div>
+    <div class="stats">
+      <div><b>28 554</b><span>пацієнтів проліковано</span></div>
+      <div><b>6 887</b><span>пацієнтів прооперовано</span></div>
+      <div><b>6 133</b><span>проліковано потерпілих від воєнних дій</span></div>
+      <div><b>4 178</b><span>пройшли реабілітацію</span></div>
+      <div><b>746</b><span>ліжкомісць</span></div>
+      <div><b>995</b><span>працівників</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="wrap">
+    <div class="cardio">
+      <div class="txt">
+        <span class="kicker" style="color:#9fe6f5">Структурний підрозділ з 2026 року</span>
+        <h2>Кардіологічний центр</h2>
+        <p>Один із провідних кардіологічних закладів Західної України, що понад 30 років рятує серця львів’ян. Працює як реперфузійний центр 24/7 — готовий допомогти пацієнту з інфарктом у будь-яку годину доби.</p>
+        <div class="facts-row">
+          <div><b>з 1995</b><span>працює центр</span></div>
+          <div><b>24/7</b><span>реперфузійний центр</span></div>
+          <div><b>з 2008</b><span>інтервенційні втручання</span></div>
+          <div><b>з 2012</b><span>кардіохірургія</span></div>
+        </div>
+        <p style="display:flex;gap:10px;align-items:center"><svg class="i"><use href="#i-pin"/></svg>вул. Кульпарківська, 35, Львів</p>
+        <div class="btns" style="margin-top:24px"><a class="btn btn-light" href="kardiocentr/">Про кардіоцентр <svg class="i"><use href="#i-arrow"/></svg></a></div>
+      </div>
+      <div class="pic"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2026/09/cardio1-1024x683.jpg" alt="Кардіологічний центр" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="head"><div><span class="kicker">Ми постійно вдосконалюємось</span><h2>Що оновили в госпіталі</h2></div><a class="more" href="pro-hospital/#onovlennia">Про госпіталь <svg class="i"><use href="#i-arrow"/></svg></a></div>
+    <div class="proj">
+      <a href="https://hospital-veterans.lviv.ua/portfolio/rekonstrukcziya-operaczijnogo-viddilennya/" target="_blank" rel="noopener"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2026/09/img_5673-1.jpeg" alt="" loading="lazy"><span>Реконструкція операційного відділення</span></a>
+      <a href="https://hospital-veterans.lviv.ua/portfolio/onovlennya-viddilennya-anesteziologiyi-ta-intensyvnoyi-terapiyi/" target="_blank" rel="noopener"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2024/04/anesteziology05-1024x684.jpg" alt="" loading="lazy"><span>Оновлення відділення анестезіології та інтенсивної терапії</span></a>
+      <a href="https://hospital-veterans.lviv.ua/portfolio/stvorennya-viddilennya-fizychnoyi-reabilitacziyi/" target="_blank" rel="noopener"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2024/03/portfolio_reabilitaciya1.jpg" alt="" loading="lazy"><span>Створення відділення фізичної реабілітації</span></a>
+      <a href="https://hospital-veterans.lviv.ua/portfolio/vidkryttya-trenazhernogo-reabilitaczijnogo-majdanchyka/" target="_blank" rel="noopener"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2023/10/novyna_101023_9.jpg" alt="" loading="lazy"><span>Тренажерний реабілітаційний майданчик</span></a>
+      <a href="https://hospital-veterans.lviv.ua/portfolio/realizacziya-programy-energozberezhennya/" target="_blank" rel="noopener"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2024/03/portfolio-energozberezennja3.jpg" alt="" loading="lazy"><span>Програма енергозбереження: 6 генераторів, утеплення фасадів</span></a>
+      <a href="https://hospital-veterans.lviv.ua/portfolio/oblashtuvannya-terytoriyi-gospitalyu-ta-gostovyh-parkingiv/" target="_blank" rel="noopener"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2023/12/portfolio_terytoriya1.jpg" alt="" loading="lazy"><span>Територія госпіталю та гостьові паркінги</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="wrap">
+    <div class="head"><div><span class="kicker">Новини</span><h2>Життя госпіталю</h2></div><a class="more" href="novyny/">Усі новини <svg class="i"><use href="#i-arrow"/></svg></a></div>
+    <div class="grid g3" id="news"></div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="wrap eu">
+    <div class="logo"><img src="https://hospital-veterans.lviv.ua/wp-content/uploads/2025/02/surlap_ua_rgb-scaled.jpg" alt="Interreg NEXT Польща — Україна, співфінансується Європейським Союзом, проєкт SURLAP" loading="lazy"></div>
+    <div>
+      <span class="kicker">Міжнародна співпраця</span>
+      <h2 style="font-size:clamp(26px,3vw,36px);margin-bottom:14px">Програма Interreg NEXT Польща — Україна 2021–2027</h2>
+      <p class="muted">Транскордонний проєкт SURLAP, співфінансований Європейським Союзом: нове обладнання, навчання персоналу та обмін досвідом з польськими партнерами.</p>
+      <a class="more" href="pro-hospital/#interreg" style="margin-top:12px">Про проєкт <svg class="i"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="yak-diistatysia">
+  <div class="wrap">
+    <div class="head"><div><span class="kicker">Як дістатися</span><h2>Дві локації</h2></div><a class="more" href="kontakty/">Усі контакти <svg class="i"><use href="#i-arrow"/></svg></a></div>
+    <div class="loc">
+      <div class="card">
+        <span class="tag">Основний госпітальний комплекс</span>
+        <h3 style="margin-top:14px">вул. Івасюка, 31, м. Винники</h3>
+        <p>Громадський транспорт зі Львова:</p>
+        <ul class="bus">
+          <li><b>5А</b>Залізнична ст. «Підзамче» — Винники (вул. Галицька)</li>
+          <li><b>29</b>Центральний залізничний вокзал — Винники, вул. Івасюка</li>
+          <li><b>40А</b>Вул. Стрийська (ТРЦ King Cross Leopolis, автовокзал) — Винники, вул. Івасюка</li>
+        </ul>
+        <a class="btn btn-line btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%B2%D1%83%D0%BB.%20%D0%86%D0%B2%D0%B0%D1%81%D1%8E%D0%BA%D0%B0%2031%2C%20%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D0%BA%D0%B8" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>Відкрити на карті</a>
+      </div>
+      <div class="card">
+        <span class="tag">Кардіологічний центр</span>
+        <h3 style="margin-top:14px">вул. Кульпарківська, 35, м. Львів</h3>
+        <div class="phones" style="margin:16px 0 20px" id="cardio-phones"></div>
+        <a class="btn btn-line btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%B2%D1%83%D0%BB.%20%D0%9A%D1%83%D0%BB%D1%8C%D0%BF%D0%B0%D1%80%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0%2035%2C%20%D0%9B%D1%8C%D0%B2%D1%96%D0%B2" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>Відкрити на карті</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<script>
+const {esc, icon, data, date, phone, phoneList} = H;
+document.getElementById('quick-phones').innerHTML = phoneList(['urgent', 'clinic', 'booking']);
+document.getElementById('cardio-phones').innerHTML = phoneList(['cardioReg', 'cardioEr']);
+
+const GROUP_ICON = {'Невідкладна допомога': 'siren', 'Хірургія': 'scalpel', 'Реабілітація': 'walk', 'Терапія та неврологія': 'brain', 'Діагностика': 'scan', 'Поліклініка': 'steth'};
+const GROUP_ORDER = ['Невідкладна допомога', 'Хірургія', 'Реабілітація', 'Терапія та неврологія', 'Діагностика', 'Поліклініка'];
+data('departments').then(D => {
+  document.getElementById('groups').innerHTML = GROUP_ORDER.map(g => {
+    const ds = D.filter(d => d.group === g);
+    const pic = ((ds.find(d => d.photos.length && !/poliklinika2/.test(d.photos[0])) || ds.find(d => d.photos.length) || {photos: []}).photos[0]) || '';
+    return `<a class="pcard" href="viddilennia/?g=${encodeURIComponent(g)}">
+      <div class="ph">${pic ? `<img src="${esc(pic)}" alt="" loading="lazy">` : ''}</div>
+      <div class="bd"><h3 style="display:flex;gap:10px;align-items:center">${icon(GROUP_ICON[g])}${esc(g)}</h3>
+      <ul>${ds.slice(0, 3).map(d => `<li>${esc(d.name.replace(/^Поліклініка\s*[–-]\s*/, ''))}</li>`).join('')}</ul>
+      <span class="cnt">${ds.length} ${H.plural(ds.length, 'відділення', 'відділення', 'відділень')} ${icon('arrow')}</span></div></a>`;
+  }).join('');
+});
+data('news').then(N => {
+  document.getElementById('news').innerHTML = N.slice(0, 3).map(n => `
+    <a class="pcard" href="novyny/?s=${encodeURIComponent(n.slug)}">
+      <div class="ph">${n.thumb ? `<img src="${esc(n.thumb)}" alt="" loading="lazy">` : ''}</div>
+      <div class="bd"><time datetime="${n.date}">${date(n.date)}</time><h3>${esc(n.title)}</h3><p>${esc(n.excerpt.slice(0, 140))}${n.excerpt.length > 140 ? '…' : ''}</p></div></a>`).join('');
+});
+</script>
+</body>
+</html>
